@@ -1,0 +1,15 @@
+--- 
+- name: Add user 
+  hosts: localhost
+  tasks:
+    - name: add group
+      group:
+        name: amy
+        gid: 2500
+      
+    - name: add user amy
+      user: 
+        name: amy
+        uid: 1700
+        group: amy
+    
