@@ -1,6 +1,6 @@
 --- 
 - name: Add user 
-  hosts: localhost
+  hosts: host1
   tasks:
     - name: add user Bob
       user: 

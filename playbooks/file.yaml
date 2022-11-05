@@ -1,6 +1,6 @@
 ---
 - name: Create a file
-  hosts: localhost
+  hosts: host1
   tasks:
     - name: Create a file under /tmp folder
       file:
