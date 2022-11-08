@@ -1,6 +1,6 @@
 ---
 - name: Install Apache on Centos 7
-  hosts: host1
+  hosts: all
   tasks:
     - name: Install Apache
       yum:
