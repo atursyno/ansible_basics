@@ -1,0 +1,9 @@
+---
+- name: Write a line
+  hosts: all
+  tasks:
+    - name: Create a file under /tmp folder
+      lineinfile:
+        path: /tmp/config
+        line: This is config file
+        create: yes

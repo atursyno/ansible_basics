@@ -1,0 +1,9 @@
+---
+- name: Update all the packages from dev_inventory.yaml
+  hosts: all
+  tasks:
+    - name: Update all the packages
+      yum:
+        name: "*"
+        state: latest
+        exclude: kernel*,foo*
